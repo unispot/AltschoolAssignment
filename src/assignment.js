@@ -13,10 +13,18 @@ const assignment = {};
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
-function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+const myNumbers = []
+for (let i = 1; i < 6; i++) {
+  myNumbers.push(i) //populating arrayOfNumbers
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+function sumOfNumbers(Numbers) {
+  let count = 0;
+  for (let k = 0; k < Numbers.length; k++) {
+    count += Numbers[k];
+  }
+    return count;
+}
+console.log('sum of all given numbers: '+sumOfNumbers(myNumbers))
 
 /**
  * Challenge - 2
@@ -27,10 +35,22 @@ function sumOfNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
-function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+const arrayOfNumbers = []
+for (let i = 1; i < 100; i++) {
+  arrayOfNumbers.push(i) //populating arrayOfNumbers
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+
+evenCount = 0;
+function countEvenNumbers(arrayOfNumbers) {
+  for (let k = 0; k < arrayOfNumbers.length + 1 ; k++)   {
+    if(arrayOfNumbers[k] % 2 == 0){
+      evenCount++;
+    }
+  }
+    return evenCount;
+}
+console.log('No. of even numbers: '+countEvenNumbers(arrayOfNumbers));
+
 
 /**
  * Challenge - 3
@@ -46,10 +66,18 @@ function countEvenNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing temperatures in Celsius to be converted
  * @returns Array the converted temperatures in Fahrenheit
  */
-function celsiusToFahrenheit(arrayOfNumbers) {
-    return arrayOfNumbers;
+const celciusArray = [25, 37, 100];
+const FahrenArray = [];
+function celsiusToFahrenheit(celciusArray) {
+  for (let i = 0; i < celciusArray.length; i++) {
+    let celciusItem = celciusArray[i];
+    let degreeFahrenheit = (celciusItem *(9/5)) + 32
+    FahrenArray.push(degreeFahrenheit);
+  }
+    return FahrenArray;
 }
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
+console.log(celsiusToFahrenheit(celciusArray));
+
 
 
 // ========================
