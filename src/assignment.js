@@ -24,7 +24,7 @@ function sumOfNumbers(Numbers) {
   }
     return count;
 }
-console.log('sum of all given numbers: '+sumOfNumbers(myNumbers))
+console.log(sumOfNumbers(myNumbers))
 
 /**
  * Challenge - 2
@@ -49,7 +49,7 @@ function countEvenNumbers(arrayOfNumbers) {
   }
     return evenCount;
 }
-console.log('No. of even numbers: '+countEvenNumbers(arrayOfNumbers));
+console.log(countEvenNumbers(arrayOfNumbers));
 
 
 /**
@@ -72,7 +72,7 @@ function celsiusToFahrenheit(celciusArray) {
   for (let i = 0; i < celciusArray.length; i++) {
     let celciusItem = celciusArray[i];
     let degreeFahrenheit = (celciusItem *(9/5)) + 32
-    FahrenArray.push(degreeFahrenheit);
+    FahrenArray.push(Math.trunc(degreeFahrenheit));
   }
     return FahrenArray;
 }
