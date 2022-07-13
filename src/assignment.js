@@ -24,8 +24,7 @@ function sumOfNumbers(Numbers) {
   }
     return count;
 }
-console.log(sumOfNumbers(myNumbers))
-
+assignment.sumOfNumbers = sumOfNumbers;
 /**
  * Challenge - 2
  * 
@@ -49,8 +48,7 @@ function countEvenNumbers(arrayOfNumbers) {
   }
     return evenCount;
 }
-console.log(countEvenNumbers(arrayOfNumbers));
-
+assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
@@ -76,8 +74,7 @@ function celsiusToFahrenheit(celciusArray) {
   }
     return FahrenArray;
 }
-console.log(celsiusToFahrenheit(celciusArray));
-
+assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 
 // ========================
